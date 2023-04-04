@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar{
+    display: flex;
+    background-color:rgb(0,0,0,0.8);
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .nav-right{
+    text-align: right;
+    float:right;
+  }
+  
+  .nav-right li {
+      display: inline;
+      float: left;
+      padding-left: 15px;
+    }
+  
+    .nav-right li a {
+      display: block;
+      padding: 8px;
+      text-decoration: none;
+      color:white;
+    }
+  
+    .nav-right  li ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color:rgb(0,0,0,0.8);
+    }
+  
+    .nav-right li a:hover {
+      background-color: rgba(250,96,0,0.8);
+    }
+  
+    .nav-right .active {
+      background-color: #04AA6D;
+    }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 23.3%;
+  margin: 0px auto 0px auto;
+  margin-left:23px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 2px 4px 8px 0 rgba(250,96,0,1.5);
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+
+.about-section {
+  background-image:url("https://media2.giphy.com/media/0y9KkTJ0W3yOZbwpui/giphy.gif?cid=6c09b952b04d396e557ff2fd475c4bb9177cdf75c6fe8853&rid=giphy.gif&ct=s"),url("https://media2.giphy.com/media/0y9KkTJ0W3yOZbwpui/giphy.gif?cid=6c09b952b04d396e557ff2fd475c4bb9177cdf75c6fe8853&rid=giphy.gif&ct=s");
+  background-repeat: no-repeat,no-repeat;
+  background-position: 0em,right;
+  
+  padding: 70px;
+  text-align:center;
+  font-style: "san-serif";
+  color: rgb(1, 1, 10);
+
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(250,96,0,0.8); ;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color:rgba(0,0,0,1.5);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-right">
+            <li><a href="front.html">Home</a></li>
+            <li><a href="test.php">Products</a></li>
+            <li><a href="About.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </div>
+    </nav>
+
+<div class="about-section" >
+  <h1><b>About Us</b></h1>
+  <p><b>Book house provides easy interface to its customer for purchasing books online.</p>
+  <p>For any query contact us. You can also send us email and call us on Week days. 
+    <p>Leave ur valuable feedback in feedback section
+      <br>Thankyou for your patience and hope you had a great shopping here.
+      <br>Shop again for sure
+  </p>
+</div>
+
+<h1 style="text-align:center"><b>Our Team</h1>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <center><img src="/images/p2.jfif" alt="" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Harika</h2>
+        <p class="title">Team lead</p>
+        <p>"Be yourself; everyone else is already taken."</p>
+        <p>harika@gmail.com</p>
+        <br>
+        <p><button class="button" >Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <center><img src="/images/p2.jfif" alt="" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Devi Lalli Sri</h2>
+        <p class="title">Team member</p>
+        <p>"Reading is a remedy for stressfree life."</p>
+        <p>lalli1234@gmail.com</p>
+        <br>
+        <p><button class="button">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <center><img src="/images/p3.jfif" alt="" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Prasanna</h2>
+        <p class="title">Team member</p>
+        <p>"A room without books is like a body without a soul."</p>
+        <p>prasanna14@gmail.com</p>
+        <br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="column">
+    <div class="card">
+        <center><img src="/images/p3.jfif" alt="" style="width:100% height=300px"></center>
+      <div class="container">
+        <h2>Nitin Joy</h2>
+        <p class="title">Team Member</p>
+        <p>"a book is the best friend forever."</p>
+        <p>Joy123456@gmail.com.com</p>
+        <br>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("https://img.freepik.com/premium-photo/front-view-pile-books-with-copy-space_23-2148255858.jpg?w=2000");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h3 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  /*background: #00b894;*/
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background:rgba(250,96,0,0.8);
+  color: white;
+}
+
+section .btntwo {
+  background:rgba(250,96,0,0.8);
+  color: white;
+}
+
+.btntwo:hover {
+  background: #fff;
+  color: #000;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: rgba(250,96,0,0.8);
+}
+
+@keyframes changetext {
+  0% {
+    content: "One stop book destination";
+  }
+  20% {
+    content: "Unlimited offers on all genres";
+  }
+  35% {
+    content: "Avail at a hugely discounted price";
+  }
+  60% {
+    content: "Join millions of happy buyers";
+  }
+  80% {
+    content: "Early bird offer on new arrivals";
+  }
+  100% {
+    content: "Let's get started!";
+  }
+}
